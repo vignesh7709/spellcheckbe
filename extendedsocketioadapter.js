@@ -8,6 +8,7 @@ class ExtendedSocketIoAdapter extends platform_socket_io_1.IoAdapter {
         super();
         this.server = server;
         const options = {
+            path: process.env.PATH,
             cors: {
                 origin: true,
                 methods: ["GET", "POST"],
