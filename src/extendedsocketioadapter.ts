@@ -8,7 +8,7 @@ export class ExtendedSocketIoAdapter extends IoAdapter {
         super();
 
         const options = {
-            path:process.env.PATH,
+            path:process.env.SPATH,
             cors: {
                 origin: true,
                 methods: ["GET", "POST"],
