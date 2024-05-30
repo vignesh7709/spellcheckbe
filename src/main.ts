@@ -20,7 +20,7 @@ async function bootstrap() {
       "PUT"
     ]
   })
-  await app.listen(3030)
+  await app.listen(process.env.PORT||3030);
   //await app.listen(3030);
 }
 bootstrap();
